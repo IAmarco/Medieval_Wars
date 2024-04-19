@@ -12,7 +12,10 @@ namespace Playable
         [SerializeField] private ToolAttack toolAttack;
         [SerializeField] private ToolDefense toolDefense;
         [SerializeField] private ToolPotion toolPotion;
-        
+        [SerializeField] public int hp = 100;
+        [SerializeField] public int hpmax = 100;
+        [SerializeField] private CharacterVisual HealthBar;
+
         [Header("Requirements")]
         [SerializeField] private Transform positionCharacter;
         
@@ -32,6 +35,14 @@ namespace Playable
         
         private void Start()
         {
+           
+            CharacterVisual healthBar = Instantiate(HealthBar);
+
+           
+            
+            
+
+
             CharacterVisual characterVisual = Instantiate(character.prefab, positionCharacter);
             Instantiate(toolAttack.prefab, characterVisual.attackPositon);
             Instantiate(toolDefense.prefab, characterVisual.defense);
