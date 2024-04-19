@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Healt : MonoBehaviour
+public class HealthBar : MonoBehaviour
 {
     private Slider slider;
         
@@ -23,7 +23,7 @@ public class Healt : MonoBehaviour
         slider.value = cantidadVida;
     }
 
-    public void InicializarHealt(float cantidadVida) 
+    public void InicializarHealth(float cantidadVida) 
     {
         CambiarVidaMaxima(cantidadVida);
         CambiarVidaActual(cantidadVida);

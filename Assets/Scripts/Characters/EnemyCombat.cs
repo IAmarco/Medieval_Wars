@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
 {
+
+
+
+
+    [SerializeField] private float vida;
+    [SerializeField] private float maximoVida;
+    [SerializeField] private HealthBar health;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        vida = maximoVida;
+        health.InicializarHealth(vida);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+
+
