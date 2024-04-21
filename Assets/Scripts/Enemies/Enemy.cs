@@ -1,6 +1,8 @@
 using Characters;
+using TMPro;
 using Tools;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Enemies
 {
@@ -14,6 +16,7 @@ namespace Enemies
         [SerializeField] private int hp ;
         [SerializeField] private int hpmax ;
         [SerializeField] private CharacterVisual HealthBar;
+         public Text DialogueText;
 
         [Header("Requirements")]
         [SerializeField] private Transform positionCharacter;
@@ -40,6 +43,8 @@ namespace Enemies
             CharacterVisual charEnemyVisual = Instantiate(charEnemy.prefab, positionCharacter);
             Instantiate(toolAttack.prefab, charEnemyVisual.attackPositon);
             Instantiate(toolDefense.prefab, charEnemyVisual.defense);
+            DialogueText.text = "An ORC from the Mountain has appeared!!! " ;
+            
         }
     } 
 }

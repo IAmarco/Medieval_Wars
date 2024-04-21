@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Witch
   m_EditorClassIdentifier: 
   prefab: {fileID: 1487982099622494230, guid: 8073ce68b7b536840bc531186337bdc9, type: 3}
-  image: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  image: {fileID: 0}

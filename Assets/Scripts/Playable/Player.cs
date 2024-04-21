@@ -1,5 +1,4 @@
-﻿using System;
-using Characters;
+﻿using Characters;
 using Tools;
 using UnityEngine;
 
@@ -34,9 +33,9 @@ namespace Playable
         public float Defense => toolDefense.defensePoints;
         
         private void Start()
-        {
+       {
            
-            CharacterVisual healthBar = Instantiate(HealthBar);
+           //CharacterVisual healthBar = Instantiate(HealthBar);
 
            
             
