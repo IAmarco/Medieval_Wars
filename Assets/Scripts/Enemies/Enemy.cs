@@ -1,3 +1,4 @@
+using System;
 using Characters;
 using TMPro;
 using Tools;
@@ -43,8 +44,16 @@ namespace Enemies
             CharacterVisual charEnemyVisual = Instantiate(charEnemy.prefab, positionCharacter);
             Instantiate(toolAttack.prefab, charEnemyVisual.attackPositon);
             Instantiate(toolDefense.prefab, charEnemyVisual.defense);
-            DialogueText.text = "An ORC from the Mountain has appeared!!! " ;
+            DialogueText.text = "An ORC from the Mountain has appeared!!! (press SPACE) " ;
             
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                DialogueText.text = "GRR....I've got an AXE! (Drog has been equiped with AXE, Press SPACE, reload F4) " ;
+            }
         }
     } 
 }

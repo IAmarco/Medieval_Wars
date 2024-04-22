@@ -11,9 +11,10 @@ namespace Playable
         [SerializeField] private ToolAttack toolAttack;
         [SerializeField] private ToolDefense toolDefense;
         [SerializeField] private ToolPotion toolPotion;
-        [SerializeField] public int hp = 100;
-        [SerializeField] public int hpmax = 100;
+        [SerializeField] public float hp = 100f;
+        [SerializeField] public float hpmax = 100f;
         [SerializeField] private CharacterVisual HealthBar;
+        
 
         [Header("Requirements")]
         [SerializeField] private Transform positionCharacter;
@@ -45,6 +46,21 @@ namespace Playable
             CharacterVisual characterVisual = Instantiate(character.prefab, positionCharacter);
             Instantiate(toolAttack.prefab, characterVisual.attackPositon);
             Instantiate(toolDefense.prefab, characterVisual.defense);
+        }
+
+        public void TomarDano(float dano)
+        {
+            hp -= dano;
+            if (hp <= 0)
+            {
+                Muerte();
+            }
+            
+        }
+
+        private void Muerte()
+        {
+            Destroy(gameObject);
         }
     }                
 }

@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 8131072802701834991}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.629, y: 0.371, z: 0}
+  m_LocalPosition: {x: -0.27, y: 0.051, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73,9 +73,10 @@ GameObject:
   - component: {fileID: 3046396426944900377}
   - component: {fileID: 1691887944967686063}
   - component: {fileID: 1487982099622494230}
+  - component: {fileID: -1724245128100279530}
   m_Layer: 0
   m_Name: Witch
-  m_TagString: Untagged
+  m_TagString: Jugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +91,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8199999, y: 1.543562, z: 0.48797488}
+  m_LocalScale: {x: 11.94, y: 10.126445, z: 3.2013297}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4631215124769605495}
@@ -138,7 +139,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 52fccfd3111a9fe419cb564fa95ba7a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 828b440264c3a4d42a377e66f23e82cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -163,3 +164,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackPositon: {fileID: 4631215124769605495}
   defense: {fileID: 2449698860496620192}
+--- !u!70 &-1724245128100279530
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170091068795935963}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.0000001, y: 1}
+  m_Direction: 0
