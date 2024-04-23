@@ -14,6 +14,7 @@ public class LanzarAxe : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F4))
         {
             Disparar();
+            
         }
     }
 

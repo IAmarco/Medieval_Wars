@@ -15,4 +15,4 @@ MonoBehaviour:
   prefab: {fileID: 8452068098161834678, guid: 1d185691b8c2f8145afd79b72d99daca, type: 3}
   image: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   toolName: Axe Ogre
-  attackPoints: 5
+  attackPoints: 20

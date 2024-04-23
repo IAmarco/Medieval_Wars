@@ -9,12 +9,18 @@ public class MovLineal : MonoBehaviour
 {
     [SerializeField] private float velocidad;
     [SerializeField] private float Dano;
-
+    private Rigidbody2D Rb;
     private void Update()
-    {
-        transform.Translate(Vector2.left*velocidad*Time.deltaTime);
+    { Ge<Rigidbody2D>(Vector2* Time.deltaTime)
         
     }
 
-  
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Jugador"))
+        {
+            other.GetComponent<Player>().TomarDano(Dano);
+            Destroy(gameObject);
+        }
+    }
 }

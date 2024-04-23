@@ -11,8 +11,8 @@ namespace Playable
         [SerializeField] private ToolAttack toolAttack;
         [SerializeField] private ToolDefense toolDefense;
         [SerializeField] private ToolPotion toolPotion;
-        [SerializeField] public float hp = 100f;
-        [SerializeField] public float hpmax = 100f;
+        [SerializeField] public float hp ;
+        [SerializeField] public float hpmax ;
         [SerializeField] private CharacterVisual HealthBar;
         
 
