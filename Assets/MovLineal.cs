@@ -11,7 +11,7 @@ public class MovLineal : MonoBehaviour
     [SerializeField] private float Dano;
     private Rigidbody2D Rb;
     private void Update()
-    { Ge<Rigidbody2D>(Vector2* Time.deltaTime)
+    { //
         
     }
 

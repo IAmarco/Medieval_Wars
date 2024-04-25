@@ -23,4 +23,11 @@ public class LanzarAxe : MonoBehaviour
 
         Instantiate(Acha, controladorDisparo.position, controladorDisparo.rotation);
     }
+
+    private void OnTriggerEnter( Collider other) 
+    
+    { 
+        Destroy (gameObject);    
+    }
+
 }

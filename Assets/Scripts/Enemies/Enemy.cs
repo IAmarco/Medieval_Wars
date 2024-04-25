@@ -38,7 +38,7 @@ namespace Enemies
         
         private void Start()
         {
-            CharacterVisual characterVisual = Instantiate(HealthBar);
+            //CharacterVisual characterVisual = Instantiate(HealthBar);
 
 
             CharacterVisual charEnemyVisual = Instantiate(charEnemy.prefab, positionCharacter);
