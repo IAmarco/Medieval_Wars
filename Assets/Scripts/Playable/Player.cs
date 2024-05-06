@@ -11,8 +11,9 @@ namespace Playable
         [SerializeField] private ToolAttack toolAttack;
         [SerializeField] private ToolDefense toolDefense;
         [SerializeField] private ToolPotion toolPotion;
-        [SerializeField] public float hp ;
-        [SerializeField] public float hpmax ;
+        [SerializeField] public float saludActual;
+        [SerializeField] public float saludMax =100f;
+        [SerializeField] public float RecibirDano = 10f;
         [SerializeField] private CharacterVisual HealthBar;
         
 
@@ -38,7 +39,7 @@ namespace Playable
            
            //CharacterVisual healthBar = Instantiate(HealthBar);
 
-           
+          saludActual = saludMax;
             
             
 
@@ -48,17 +49,21 @@ namespace Playable
             Instantiate(toolDefense.prefab, characterVisual.defense);
         }
 
-        public void TomarDano(float dano)
+        public void ReducirDano(float cantidad)
         {
-            hp -= dano;
-            if (hp <= 0)
+           saludActual -= cantidad;
+            if (saludActual <= 0)
             {
-                Muerte();
+                Morir();
             }
             
         }
 
-        private void Muerte()
+        public void Recibirdano() 
+        { 
+        }
+
+        private void Morir()
         {
             Destroy(gameObject);
         }

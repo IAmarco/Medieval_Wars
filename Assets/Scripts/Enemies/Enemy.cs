@@ -38,12 +38,13 @@ namespace Enemies
         
         private void Start()
         {
-            //CharacterVisual characterVisual = Instantiate(HealthBar);
+            
 
 
             CharacterVisual charEnemyVisual = Instantiate(charEnemy.prefab, positionCharacter);
             Instantiate(toolAttack.prefab, charEnemyVisual.attackPositon);
             Instantiate(toolDefense.prefab, charEnemyVisual.defense);
+           // Instantiate(toolHealthBar.prefab, charEnemyVisual.HealthBar);
             DialogueText.text = "An ORC from the Mountain has appeared!!! (press SPACE) " ;
             
         }
